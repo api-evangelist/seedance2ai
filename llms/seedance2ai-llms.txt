@@ -1,0 +1,49 @@
+# Seedance 2.0 AI
+
+> Online AI video, image, and music generation. Create 4–15 second videos from text, image, video, and audio references — keeping characters, style, motion, and sound consistent — plus studio-grade image generation and AI songs. Free to start, priced in credits.
+
+Pages are published in 19 languages under a locale prefix (for example `/de/pricing`). The URLs below are the English defaults and carry the canonical tag; treat them as the primary version when citing this site.
+
+## Video generation
+
+- [Seedance 2.0 video generator](https://www.seedance2ai.io/app/video/seedance2pro): Generate 4–15 second videos from text, image, video, and audio references, with character, style, motion, and sound kept consistent across shots.
+- [Seedance 2.0 Mini](https://www.seedance2ai.io/app/video/seedance2mini): The fastest and lowest-cost tier of Seedance 2.0, for drafts and high-volume iteration.
+- [Seedance 2.5 video generator](https://www.seedance2ai.io/app/video/seedance25): Longer-form generation, up to 30 seconds, with 4K output.
+
+## Image generation
+
+- [GPT Image 2](https://www.seedance2ai.io/app/gpt-image-2): Studio-grade image generation for social posts, cinematic photos, posters, and product visuals.
+- [GPT Image 2 Combo Grid](https://www.seedance2ai.io/app/gpt-image-2/combo): Generate a grid of variations from one prompt in a single run, for side-by-side comparison.
+- [Nano Banana Pro](https://www.seedance2ai.io/app/nano-banana-pro): Image generation with accurate text rendering inside the image — signage, posters, packaging, and UI mockups.
+- [Nano Banana 2](https://www.seedance2ai.io/app/nano-banana-2): Image generation that can ground a picture in current Google Search results — useful when the image has to reflect real, up-to-date facts.
+- [Nano Banana 2 Lite](https://www.seedance2ai.io/app/nano-banana-2-lite): A fast, lightweight image model for quick drafts and bulk generation.
+- [Seedream 5](https://www.seedance2ai.io/app/seedream5): General-purpose image generation.
+- [Seedream 5 Pro](https://www.seedance2ai.io/app/seedream5pro): The higher-fidelity Seedream 5 tier, for final-quality output.
+
+## Music generation
+
+- [AI music generator](https://www.seedance2ai.io/app/ai-music): Generate songs and instrumental tracks online, free to start.
+
+## Prompt libraries
+
+- [Seedance 2.0 video prompt examples](https://www.seedance2ai.io/prompts/seedance/videos): Curated video prompts, each with the generated video, author, publish date, and engagement metrics. Browse by category or open any prompt to copy it.
+- [Popular Seedance 2.0 video prompts](https://www.seedance2ai.io/prompts/seedance/videos/popular): The same library sorted by bookmarks and views — the fastest way to see what works.
+- [GPT Image 2 prompts](https://www.seedance2ai.io/gpt-image2-prompts): Curated image prompts for social posts, cinematic photos, posters, infographics, character sheets, and product visuals.
+
+## Learn
+
+- [Seedance 2.0 complete prompt guide](https://www.seedance2ai.io/prompt-guide): Prompting techniques for professional AI video, including best practices for multi-modal references.
+- [Explore](https://www.seedance2ai.io/explore): A gallery of recent AI-generated video and image work made on this site.
+- [Blog](https://www.seedance2ai.io/blog): Product news, model updates, and technique write-ups.
+
+## Plans and company
+
+- [Pricing](https://www.seedance2ai.io/pricing): Credit packs and subscription plans. Generation costs are charged in credits; the per-model rate is shown before you run a job.
+- [About](https://www.seedance2ai.io/about): How this site provides independent access to AI creation tools, billing, and customer support.
+
+## For developers
+
+- [API documentation](https://www.seedance2ai.io/developers): Create an API key, call the REST API with Bearer auth, and poll task status. Works with any HTTP client.
+- [API reference (machine-readable)](https://www.seedance2ai.io/llms-api.txt): The full endpoint reference as plain Markdown — every parameter, allowed value, and response shape.
+- [Everything in one file](https://www.seedance2ai.io/llms-full.txt): This index plus the complete API reference, for a single fetch.
+

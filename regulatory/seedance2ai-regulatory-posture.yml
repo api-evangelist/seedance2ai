@@ -1,0 +1,12 @@
+generated: '2026-09-27'
+method: searched
+source: https://www.seedance2ai.io/privacy-policy
+signals:
+  ai_transparency:
+    evidence:
+      - source: https://www.seedance2ai.io/privacy-policy
+        http_status: 200
+        fetched: "true"
+        quote: "We do not use your uploaded images, videos, or generated content to train our AI models."
+        section: "Important Privacy Commitment"
+    note: The provider states that user-generated content is not used for AI training, indicating transparency about AI model training data.

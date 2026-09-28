@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/seedance2ai/main/json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json",
+  "title": "GetApiV1TasksIdResponse",
+  "x-generated": "2026-09-28",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/seedance2ai-openapi-generated.yml#/components/schemas/GetApiV1TasksIdResponse",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "quality_tier": {
+      "type": "string"
+    },
+    "channel": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "string"
+    },
+    "credits_used": {
+      "type": "integer"
+    },
+    "credits_refunded": {
+      "type": "integer"
+    },
+    "output": {
+      "type": "object",
+      "description": "Contains video_url, last_frame_url, seed"
+    },
+    "error": {
+      "type": "string"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "updated_at": {
+      "type": "string"
+    }
+  }
+}

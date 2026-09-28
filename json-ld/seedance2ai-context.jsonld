@@ -1,0 +1,97 @@
+{
+  "@context": {
+    "@vocab": "https://seedance2ai.io/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "seedance2ai": "https://seedance2ai.io/schema#",
+    "PostApiV1ImageImageidRequest": "seedance2ai:PostApiV1ImageImageidRequest",
+    "type": {
+      "@id": "seedance2ai:type",
+      "@type": "xsd:string"
+    },
+    "prompt": {
+      "@id": "seedance2ai:prompt",
+      "@type": "xsd:string"
+    },
+    "resolution": {
+      "@id": "seedance2ai:resolution",
+      "@type": "xsd:string"
+    },
+    "aspect_ratio": {
+      "@id": "seedance2ai:aspect_ratio",
+      "@type": "xsd:string"
+    },
+    "PostApiV1ImageImageidResponse": "seedance2ai:PostApiV1ImageImageidResponse",
+    "id": {
+      "@id": "seedance2ai:id",
+      "@type": "xsd:string"
+    },
+    "status": {
+      "@id": "seedance2ai:status",
+      "@type": "xsd:string"
+    },
+    "model": {
+      "@id": "seedance2ai:model",
+      "@type": "xsd:string"
+    },
+    "credits_used": {
+      "@id": "seedance2ai:credits_used",
+      "@type": "xsd:integer"
+    },
+    "remaining_credits": {
+      "@id": "seedance2ai:remaining_credits",
+      "@type": "xsd:integer"
+    },
+    "GetApiV1TasksIdResponse": "seedance2ai:GetApiV1TasksIdResponse",
+    "quality_tier": {
+      "@id": "seedance2ai:quality_tier",
+      "@type": "xsd:string"
+    },
+    "channel": {
+      "@id": "seedance2ai:channel",
+      "@type": "xsd:string"
+    },
+    "credits_refunded": {
+      "@id": "seedance2ai:credits_refunded",
+      "@type": "xsd:integer"
+    },
+    "output": {
+      "@id": "seedance2ai:output"
+    },
+    "error": {
+      "@id": "seedance2ai:error",
+      "@type": "xsd:string"
+    },
+    "created_at": {
+      "@id": "seedance2ai:created_at",
+      "@type": "xsd:string"
+    },
+    "updated_at": {
+      "@id": "seedance2ai:updated_at",
+      "@type": "xsd:string"
+    },
+    "PostApiV1VideoVideoidRequest": "seedance2ai:PostApiV1VideoVideoidRequest",
+    "mode": {
+      "@id": "seedance2ai:mode",
+      "@type": "xsd:string"
+    },
+    "duration": {
+      "@id": "seedance2ai:duration",
+      "@type": "xsd:string"
+    },
+    "PostApiV1VideoVideoidResponse": "seedance2ai:PostApiV1VideoVideoidResponse",
+    "GetDownloadsSeedanceSkillMdResponse": "seedance2ai:GetDownloadsSeedanceSkillMdResponse",
+    "file": {
+      "@id": "seedance2ai:file",
+      "@type": "xsd:string"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "Seedance2AI (SixBryan LLC) API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects Seedance2AI (SixBryan LLC)'s own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-09-28) from openapi/_ae-authored/seedance2ai-openapi-generated.yml.",
+  "dcterms:created": "2026-09-28",
+  "dcterms:source": [
+    "openapi/_ae-authored/seedance2ai-openapi-generated.yml"
+  ]
+}

@@ -1,23 +1,131 @@
 aid: seedance2ai
+
 name: Seedance2AI (SixBryan LLC)
-description: 'Seedance2AI (SixBryan LLC) is a company surfaced via the API Evangelist harvest backlog
-  (source: new-submission) and added to the network as a stub for full-pipeline profiling.'
+
+description: Seedance2AI (SixBryan LLC) provides an AI-powered video generation platform that enables users to create cinematic videos from text,
+  images, audio, and video inputs. Leveraging multi‑modal AI, the service offers precise reference control, watermark‑free outputs, and a suite
+  of tools for marketers, educators, and storytellers. The platform includes a developer portal with API documentation, pricing plans, and integration
+  guides, allowing developers to embed video generation capabilities into their applications.
+
 url: https://raw.githubusercontent.com/api-evangelist/seedance2ai/refs/heads/main/apis.yml
+
+image: https://www.seedance2ai.io/favicon.ico
+
 x-type: company
+
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- AI
+- Video Generation
+- Multi-modal
+- Developer Platform
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/seedance2ai-plans-pricing.yml
+- type: Spectral
+  url: rules/seedance2ai-rules.yml
+- type: JSONLD
+  url: json-ld/seedance2ai-context.jsonld
+- type: Vocabulary
+  url: vocabulary/seedance2ai-vocabulary.yml
+- type: AgentSkill
+  url: skills/_index.yml
+- type: DataModel
+  url: data-model/seedance2ai-data-model.yml
+- type: Conformance
+  url: conformance/seedance2ai-conformance.yml
+- type: Overlay
+  url: overlays/seedance2ai-openapi-generated-overlay.yml
+- type: LLMsTxt
+  url: llms/seedance2ai-llms.txt
+- type: Hosts
+  url: hosts/seedance2ai-hosts.yml
+- type: Vendors
+  url: vendors/seedance2ai-vendors.yml
+- type: TermsOfService
+  url: https://www.seedance2ai.io/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.seedance2ai.io/privacy-policy
+- type: DomainSecurity
+  url: security/seedance2ai-domain-security.yml
 - type: Website
   url: https://www.seedance2ai.io/
+- type: DeveloperPortal
+  url: https://www.seedance2ai.io/developers
+- type: Documentation
+  url: https://www.seedance2ai.io/developers
+- type: GettingStarted
+  url: https://www.seedance2ai.io/developers
+- type: APIReference
+  url: https://www.seedance2ai.io/developers
+- type: Pricing
+  url: https://www.seedance2ai.io/pricing
+- type: SignUp
+  url: https://www.seedance2ai.io/app/video/seedance2pro
+- type: Blog
+  url: https://www.seedance2ai.io/blog
+- type: GitHubOrganization
+  url: https://github.com/seedance2ai
+
+apis:
+- name: Seedance2AI API
+  description: Public API for Seedance2AI video generation platform
+  humanURL: https://www.seedance2ai.io/developers
+  baseURL: https://www.seedance2ai.io/api/v1
+  aid: seedance2ai:seedance2ai-api-2
+- aid: seedance2ai:seedance2ai-api
+  name: Seedance2AI (SixBryan LLC) API
+  description: 'Seedance2AI (SixBryan LLC) API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist
+
+    (2026-09-27); not the provider''s own document.'
+  humanURL: https://www.seedance2ai.io/developers
+  properties:
+  - type: OpenAPI
+    url: openapi/_ae-authored/seedance2ai-openapi-generated.yml
+    x-provenance: generated
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-downloads-seedance-skill-md-response-schema.json
+
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  detail: The provider's developer portal only offers a plain‑text API reference (llms-api.txt) without a machine‑readable OpenAPI, AsyncAPI,
+    GraphQL, gRPC or WSDL contract.
+  evidence:
+  - url: https://www.seedance2ai.io/llms-api.txt
+    status: 200
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 26
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

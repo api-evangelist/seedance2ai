@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/seedance2ai/main/json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json",
+  "title": "PostApiV1ImageImageidRequest",
+  "x-generated": "2026-09-28",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/seedance2ai-openapi-generated.yml#/components/schemas/PostApiV1ImageImageidRequest",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "string"
+    },
+    "aspect_ratio": {
+      "type": "string"
+    }
+  }
+}

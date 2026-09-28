@@ -1,0 +1,6 @@
+generated: "2026-09-27"
+method: derived
+overlay:
+  version: "1.0.0"
+  description: "Enhancements for Seedance2AI OpenAPI spec"
+  actions: []

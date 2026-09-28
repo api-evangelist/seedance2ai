@@ -1,0 +1,59 @@
+generated: '2026-09-28'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 3
+  own: 2
+  other_domain: 0
+  platform: 1
+  roles:
+  - api
+  - source
+  - website
+hosts:
+- host: api.seedance2ai.io
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: seedance2ai.io
+  role: api
+  relation: own
+- host: github.com
+  found_by:
+  - pointer
+  types:
+  - GitHubOrganization
+  serves: []
+  registrable_domain: github.com
+  role: source
+  relation: platform
+- host: www.seedance2ai.io
+  found_by:
+  - pointer
+  - apis[]
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Website
+  - DeveloperPortal
+  - Documentation
+  - GettingStarted
+  - APIReference
+  - Pricing
+  - SignUp
+  - Blog
+  serves:
+  - api
+  - docs
+  - hosting
+  vendor: vercel
+  registrable_domain: seedance2ai.io
+  role: website
+  relation: own

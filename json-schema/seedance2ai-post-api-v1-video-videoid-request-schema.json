@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/seedance2ai/main/json-schema/seedance2ai-post-api-v1-video-videoid-request-schema.json",
+  "title": "PostApiV1VideoVideoidRequest",
+  "x-generated": "2026-09-28",
+  "x-method": "derived",
+  "x-generator": "derive-json-schema.py",
+  "x-source": "openapi/_ae-authored/seedance2ai-openapi-generated.yml#/components/schemas/PostApiV1VideoVideoidRequest",
+  "type": "object",
+  "properties": {
+    "mode": {
+      "type": "string"
+    },
+    "quality_tier": {
+      "type": "string"
+    },
+    "prompt": {
+      "type": "string"
+    },
+    "aspect_ratio": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "resolution": {
+      "type": "string"
+    }
+  }
+}

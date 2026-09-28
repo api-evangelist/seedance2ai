@@ -1,0 +1,86 @@
+generated: '2026-09-27'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.seedance2ai.io/pricing
+sources:
+- https://www.seedance2ai.io/pricing
+name: Seedance2AI (SixBryan LLC) pricing
+audience: business-product
+pricing_basis: tiered-subscription
+plans:
+- name: Basic
+  price_text: $14.90 /mo
+  price: 14.9
+  billing_period: monthly
+  description: Perfect for quick tests and first projects when you are just getting started
+- name: Basic Annual
+  price_text: $179 /Year
+  price: 179
+  billing_period: yearly
+  description: Basic annual plan
+- name: Standard
+  price_text: $24.90 /mo
+  price: 24.9
+  billing_period: monthly
+  description: Best for professionals and frequent creators
+- name: Standard Annual
+  price_text: $299 /Year
+  price: 299
+  billing_period: yearly
+  description: Standard annual plan
+- name: Pro
+  price_text: $49.90 /mo
+  price: 49.9
+  billing_period: monthly
+  description: The next step up for serious creators
+- name: Pro Annual
+  price_text: $599 /Year
+  price: 599
+  billing_period: yearly
+  description: Pro annual plan
+- name: Max
+  price_text: $99.90 /mo
+  price: 99.9
+  billing_period: monthly
+  description: For high-volume creators who need maximum credits
+- name: Max Annual
+  price_text: $1,199 /Year
+  price: 1199
+  billing_period: yearly
+  description: Max annual plan
+- name: Starter Pack
+  price_text: $39.90
+  price: 39.9
+  billing_period: one-time
+  description: Quick top-up for small runs
+- name: Creator Pack
+  price_text: $79.90
+  price: 79.9
+  billing_period: one-time
+  description: Popular for regular usage
+- name: Professional Pack
+  price_text: $199.90
+  price: 199.9
+  billing_period: one-time
+  description: Best for larger batches
+- name: Advanced Pack
+  price_text: $599
+  price: 599
+  billing_period: one-time
+  description: Best for high-volume usage
+- name: Power Pack
+  price_text: $999
+  price: 999
+  billing_period: one-time
+  description: Best value for regular high-volume usage
+- name: Max Pack
+  price_text: $2,499
+  price: 2499
+  billing_period: one-time
+  description: Best for high-volume usage
+- name: Trial Pack
+  price_text: $3.99
+  price: 3.99
+  billing_period: one-time
+  description: Suited to small projects and first-time use
+docs: https://www.seedance2ai.io/pricing
