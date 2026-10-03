@@ -91,16 +91,16 @@ apis:
   humanURL: https://www.seedance2ai.io/developers
   baseURL: https://www.seedance2ai.io/api/v1
   aid: seedance2ai:seedance2ai-api-2
-- aid: seedance2ai:seedance2ai-api
-  name: Seedance2AI (SixBryan LLC) API
-  description: 'Seedance2AI (SixBryan LLC) API as documented publicly: 4 operations. Contract generated from the documentation by API Evangelist
-
-    (2026-09-27); not the provider''s own document.'
+- aid: seedance2ai:seedance2ai-downloads-api
+  name: Seedance2AI (SixBryan LLC) Downloads API
+  description: The Downloads API from Seedance2AI (SixBryan LLC) — 1 operation(s) for downloads.
   humanURL: https://www.seedance2ai.io/developers
+  baseURL: https://www.seedance2ai.io/api/v1
+  tags:
+  - Downloads
   properties:
   - type: OpenAPI
-    url: openapi/_ae-authored/seedance2ai-openapi-generated.yml
-    x-provenance: generated
+    url: openapi/seedance2ai-downloads-api-openapi.yml
   - type: JSONSchema
     url: json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json
   - type: JSONSchema
@@ -113,7 +113,72 @@ apis:
     url: json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json
   - type: JSONSchema
     url: json-schema/seedance2ai-get-downloads-seedance-skill-md-response-schema.json
-
+- aid: seedance2ai:seedance2ai-image-api
+  name: Seedance2AI (SixBryan LLC) Image API
+  description: The Image API from Seedance2AI (SixBryan LLC) — 1 operation(s) for image.
+  humanURL: https://www.seedance2ai.io/developers
+  baseURL: https://www.seedance2ai.io/api/v1
+  tags:
+  - Image
+  properties:
+  - type: OpenAPI
+    url: openapi/seedance2ai-image-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-downloads-seedance-skill-md-response-schema.json
+- aid: seedance2ai:seedance2ai-tasks-api
+  name: Seedance2AI (SixBryan LLC) Tasks API
+  description: The Tasks API from Seedance2AI (SixBryan LLC) — 1 operation(s) for tasks.
+  humanURL: https://www.seedance2ai.io/developers
+  baseURL: https://www.seedance2ai.io/api/v1
+  tags:
+  - Tasks
+  properties:
+  - type: OpenAPI
+    url: openapi/seedance2ai-tasks-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-downloads-seedance-skill-md-response-schema.json
+- aid: seedance2ai:seedance2ai-video-api
+  name: Seedance2AI (SixBryan LLC) Video API
+  description: The Video API from Seedance2AI (SixBryan LLC) — 1 operation(s) for video.
+  humanURL: https://www.seedance2ai.io/developers
+  baseURL: https://www.seedance2ai.io/api/v1
+  tags:
+  - Video
+  properties:
+  - type: OpenAPI
+    url: openapi/seedance2ai-video-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-api-v1-tasks-id-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-video-videoid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-response-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-post-api-v1-image-imageid-request-schema.json
+  - type: JSONSchema
+    url: json-schema/seedance2ai-get-downloads-seedance-skill-md-response-schema.json
 x-coverage:
   state: unreadable
   reason: no-machine-readable-spec

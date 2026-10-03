@@ -1,0 +1,94 @@
+openapi: 3.2.0
+info:
+  title: Seedance2AI (SixBryan LLC) Video API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 4 operation(s) read from 5 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Seedance2AI (SixBryan LLC) has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 10
+    documentation: -6
+    pages-with-code: 5
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.seedance2ai.io/developers
+  - https://www.seedance2ai.io/llms-api.txt
+  - https://www.seedance2ai.io/ar/developers
+  - https://www.seedance2ai.io/de/developers
+  - https://www.seedance2ai.io/es/developers
+security:
+- bearer: []
+tags:
+- name: Video
+paths:
+  /api/v1/video/{videoid}:
+    post:
+      operationId: post_api_v1_video_videoid
+      tags:
+      - Video
+      summary: POST /api/v1/video/seedance2
+      x-source: https://www.seedance2ai.io/developers
+      parameters:
+      - name: videoid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1VideoVideoidRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1VideoVideoidResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X POST https://www.seedance2ai.io/api/v1/video/seedance2  -H \"Authorization: Bearer $SEEDANCE_API_KEY \"  -H \"Content-Type: application/json\"  -H \"Idempotency-Key: demo-video-001\"  -d '{\n \"mode\": \"text-to-video\",\n \"quality_tier\": \"standard\",\n \"prompt\": \"A cinematic shot of a glass train crossing a snowy mountain bridge\",\n \"aspect_ratio\": \"16:9\",\n \"duration\": \"5\",\n \"resolution\": \"720p\"\n }' Res"
+        collapsed_from: 2 example path(s) differing only at videoId
+components:
+  schemas:
+    PostApiV1VideoVideoidRequest:
+      type: object
+      properties:
+        mode:
+          type: string
+        quality_tier:
+          type: string
+        prompt:
+          type: string
+        aspect_ratio:
+          type: string
+        duration:
+          type: string
+        resolution:
+          type: string
+    PostApiV1VideoVideoidResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+        model:
+          type: string
+        quality_tier:
+          type: string
+        channel:
+          type: string
+        credits_used:
+          type: integer
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

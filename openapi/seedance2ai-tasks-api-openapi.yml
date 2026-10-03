@@ -1,0 +1,84 @@
+openapi: 3.2.0
+info:
+  title: Seedance2AI (SixBryan LLC) Tasks API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 4 operation(s) read from 5 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Seedance2AI (SixBryan LLC) has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 10
+    documentation: -6
+    pages-with-code: 5
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.seedance2ai.io/developers
+  - https://www.seedance2ai.io/llms-api.txt
+  - https://www.seedance2ai.io/ar/developers
+  - https://www.seedance2ai.io/de/developers
+  - https://www.seedance2ai.io/es/developers
+security:
+- bearer: []
+tags:
+- name: Tasks
+paths:
+  /api/v1/tasks/{id}:
+    get:
+      operationId: get_api_v1_tasks_id
+      tags:
+      - Tasks
+      summary: Check task status
+      description: Poll the task status endpoint until the status is completed or failed.
+      x-source: https://www.seedance2ai.io/developers
+      parameters:
+      - name: id
+        in: path
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetApiV1TasksIdResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetApiV1TasksIdResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+        model:
+          type: string
+        quality_tier:
+          type: string
+        channel:
+          type: string
+        resolution:
+          type: string
+        credits_used:
+          type: integer
+        credits_refunded:
+          type: integer
+        output:
+          type: object
+          description: Contains video_url, last_frame_url, seed
+        error:
+          type: string
+        created_at:
+          type: string
+        updated_at:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

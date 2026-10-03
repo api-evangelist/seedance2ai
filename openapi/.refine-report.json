@@ -1,0 +1,27 @@
+{
+  "provider": "seedance2ai",
+  "sources": [
+    "_ae-authored/seedance2ai-openapi-generated.yml"
+  ],
+  "outputs": [
+    "seedance2ai-downloads-api-openapi.yml",
+    "seedance2ai-image-api-openapi.yml",
+    "seedance2ai-tasks-api-openapi.yml",
+    "seedance2ai-video-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "sourced from openapi/_original/ (0 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "seedance2ai-openapi-generated.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "seedance2ai-openapi-generated.yml: tagged paths POST /api/v1/image/{imageid} -> Image",
+    "seedance2ai-openapi-generated.yml: tagged paths GET /api/v1/tasks/{id} -> Tasks",
+    "seedance2ai-openapi-generated.yml: tagged paths POST /api/v1/video/{videoid} -> Video",
+    "seedance2ai-openapi-generated.yml: declared missing tag: Image",
+    "seedance2ai-openapi-generated.yml: declared missing tag: Tasks",
+    "seedance2ai-openapi-generated.yml: declared missing tag: Video",
+    "apis.yml register: written (+4 apis, 5 total)"
+  ],
+  "skipped": []
+}

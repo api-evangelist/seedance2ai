@@ -1,0 +1,88 @@
+openapi: 3.2.0
+info:
+  title: Seedance2AI (SixBryan LLC) Image API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 4 operation(s) read from 5 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Seedance2AI (SixBryan LLC) has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 10
+    documentation: -6
+    pages-with-code: 5
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.seedance2ai.io/developers
+  - https://www.seedance2ai.io/llms-api.txt
+  - https://www.seedance2ai.io/ar/developers
+  - https://www.seedance2ai.io/de/developers
+  - https://www.seedance2ai.io/es/developers
+security:
+- bearer: []
+tags:
+- name: Image
+paths:
+  /api/v1/image/{imageid}:
+    post:
+      operationId: post_api_v1_image_imageid
+      tags:
+      - Image
+      summary: POST /api/v1/image/gpt-image-2
+      x-source: https://www.seedance2ai.io/llms-api.txt
+      parameters:
+      - name: imageid
+        in: path
+        required: true
+        schema:
+          type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/PostApiV1ImageImageidRequest'
+      responses:
+        '201':
+          description: Success (shape read from the example response on the page)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/PostApiV1ImageImageidResponse'
+      x-evidence:
+        kind: code-example
+        language: curl
+        snippet: "curl -X POST https://www.seedance2ai.io/api/v1/image/gpt-image-2  -H \"Authorization: Bearer $SEEDANCE_API_KEY\"  -H \"Content-Type: application/json\"  -H \"Idempotency-Key: demo-gpt-image-001\"  -d '{\n    \"type\": \"text-to-image\",\n    \"prompt\": \"Editorial product photo of a transparent running shoe on chrome\",\n    \"resolution\": \"1K\",\n    \"aspect_ratio\": \"1:1\"\n  }'\n```"
+        collapsed_from: 4 example path(s) differing only at imageId
+components:
+  schemas:
+    PostApiV1ImageImageidResponse:
+      type: object
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+        model:
+          type: string
+        credits_used:
+          type: integer
+        remaining_credits:
+          type: integer
+    PostApiV1ImageImageidRequest:
+      type: object
+      properties:
+        type:
+          type: string
+        prompt:
+          type: string
+        resolution:
+          type: string
+        aspect_ratio:
+          type: string
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer

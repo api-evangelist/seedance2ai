@@ -1,0 +1,56 @@
+openapi: 3.2.0
+info:
+  title: Seedance2AI (SixBryan LLC) Downloads API
+  version: '2026-09-27'
+  description: 'GENERATED FROM DOCUMENTATION by API Evangelist on 2026-09-27: 4 operation(s) read from 5 public documentation page(s) (each operation names its page in x-source). This is not the provider''s published contract; Seedance2AI (SixBryan LLC) has published no machine-readable contract that the pipeline could find. Engine: local.'
+  x-evidence-tiers:
+    code-example: 10
+    documentation: -6
+    pages-with-code: 5
+    pages-read: 5
+  x-generated-from: documentation
+  x-provenance: generated
+  x-authored-by: API Evangelist
+  x-generated: '2026-09-27'
+  x-generator: generate-contract-from-docs.py
+  x-engine: local
+  x-sources:
+  - https://www.seedance2ai.io/developers
+  - https://www.seedance2ai.io/llms-api.txt
+  - https://www.seedance2ai.io/ar/developers
+  - https://www.seedance2ai.io/de/developers
+  - https://www.seedance2ai.io/es/developers
+security:
+- bearer: []
+tags:
+- name: Downloads
+paths:
+  /downloads/seedance-skill.md:
+    get:
+      operationId: get_downloads_seedance_skill_md
+      tags:
+      - Downloads
+      summary: Download the one‑file skill from Seedance 2.0 AI
+      description: Retrieve the Seedance skill markdown file.
+      x-source: https://www.seedance2ai.io/developers
+      responses:
+        '200':
+          description: Success (status as documented)
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GetDownloadsSeedanceSkillMdResponse'
+      x-evidence:
+        kind: documentation
+components:
+  schemas:
+    GetDownloadsSeedanceSkillMdResponse:
+      type: object
+      properties:
+        file:
+          type: string
+          description: Skill definition file content.
+  securitySchemes:
+    bearer:
+      type: http
+      scheme: bearer
