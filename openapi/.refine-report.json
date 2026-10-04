@@ -21,7 +21,12 @@
     "seedance2ai-openapi-generated.yml: declared missing tag: Image",
     "seedance2ai-openapi-generated.yml: declared missing tag: Tasks",
     "seedance2ai-openapi-generated.yml: declared missing tag: Video",
-    "apis.yml register: written (+4 apis, 5 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "seedance2ai-downloads-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "seedance2ai-image-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "seedance2ai-tasks-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "seedance2ai-video-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
