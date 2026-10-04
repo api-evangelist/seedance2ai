@@ -26,6 +26,12 @@ modified: '2026-09-27'
 
 tags:
 - Company
+- Artificial Intelligence
+- Video Generation
+- Multi-Modal
+- Developer Platform
+tags_raw:
+- Company
 - AI
 - Video Generation
 - Multi-modal
@@ -141,6 +147,8 @@ apis:
   humanURL: https://www.seedance2ai.io/developers
   baseURL: https://www.seedance2ai.io/api/v1
   tags:
+  - Task
+  tags_raw:
   - Tasks
   properties:
   - type: OpenAPI
