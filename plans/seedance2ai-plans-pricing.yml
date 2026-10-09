@@ -84,3 +84,100 @@ plans:
   billing_period: one-time
   description: Suited to small projects and first-time use
 docs: https://www.seedance2ai.io/pricing
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - subscription
+  units: []
+  plans:
+  - name: Basic
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Basic Annual
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Standard
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Standard Annual
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro Annual
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Max
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Max Annual
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Starter Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Creator Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Professional Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Advanced Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Power Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Max Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Trial Pack
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
