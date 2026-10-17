@@ -58,21 +58,6 @@ paths:
         collapsed_from: 2 example path(s) differing only at videoId
 components:
   schemas:
-    PostApiV1VideoVideoidRequest:
-      type: object
-      properties:
-        mode:
-          type: string
-        quality_tier:
-          type: string
-        prompt:
-          type: string
-        aspect_ratio:
-          type: string
-        duration:
-          type: string
-        resolution:
-          type: string
     PostApiV1VideoVideoidResponse:
       type: object
       properties:
@@ -88,6 +73,21 @@ components:
           type: string
         credits_used:
           type: integer
+    PostApiV1VideoVideoidRequest:
+      type: object
+      properties:
+        mode:
+          type: string
+        quality_tier:
+          type: string
+        prompt:
+          type: string
+        aspect_ratio:
+          type: string
+        duration:
+          type: string
+        resolution:
+          type: string
   securitySchemes:
     bearer:
       type: http
